@@ -42,3 +42,10 @@ To automate deployment and testing below tools are used:
 ## Add alerts and monitoring across all of the mentioned components
 
 * For each component the alerts are created while creation of the component using role tasks in ansible. Alerts are created and set using grafana apis and set to trigger to emails/slack channels etc.. 
+
+## Plan which can be scaled to 100K users in a cost optimized way
+
+* Add Pod Disruption Budget to application
+* Design your CI/CD pipeline to enforce cost-saving practices
+* Monitoring environment and enforce cost-optimized configurations 
+* Appropriate resource requests and limits
