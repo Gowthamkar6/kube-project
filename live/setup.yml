@@ -1,0 +1,31 @@
+---
+- hosts: all
+  roles:
+    - basic_packages
+    - ipv6
+    - ssh
+    - ntpsync
+    - nameserver
+  tags:
+    - basic
+
+- hosts: nfs
+  roles:
+    - role: nfsserver
+      tags: nfsserver
+
+- hosts: workstation
+  roles: 
+    - app-upgrade
+  tags:
+    - app-upgrade
+
+- hosts: db
+  roles:
+    - role: database
+      tags: database
+
+- host: workstation
+  roles:
+    - role: api
+      tags: api

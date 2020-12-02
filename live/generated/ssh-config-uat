@@ -1,0 +1,5 @@
+Host controller-0
+  Hostname 11.21.121.2
+  User admin
+  Identityfile /home/secrets/id_rsa
+  StrictHostKeyChecking no

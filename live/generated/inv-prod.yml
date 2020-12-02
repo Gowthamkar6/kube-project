@@ -1,0 +1,8 @@
+app-controller:
+    hosts:
+      core-controller-0: 1.121.222.3
+      core-controller-1: 2.333.332.3
+      core-controller-2: 3.332.323.3
+app-master
+    hosts:
+      core-master-0: 1.121.222.3                                                                                                                                                                                                                   core-master-1: 2.333.332.3                                                                                                                                                                                                                   core-master-2: 3.332.323.3 
